@@ -1,7 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect, useState } from "react"
+import Loader from './components/Loader/Loader';
 
 function App() {
+  const [loading , setLoading] = useState(true)
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, [])
+
+  if(loading){
+    return(<>
+      <Loader/>
+    </>)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
