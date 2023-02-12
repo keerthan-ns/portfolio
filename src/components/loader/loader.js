@@ -4,12 +4,12 @@ import "./Loader.css"
 function Loader() {
   return (
     <>
-        <div class="container">
-            <div class="ring"></div>
-            <div class="ring"></div>
-            <div class="ring"></div>
+        <div className="container">
+            <div className="ring"></div>
+            <div className="ring"></div>
+            <div className="ring"></div>
         </div>
-        <div class="glitch" data-text="LOADING...">LOADING...</div>
+        <div className="glitch" data-text="LOADING...">LOADING...</div>
     </>
   )
 }
