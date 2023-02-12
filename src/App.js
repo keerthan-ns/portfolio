@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useState } from "react"
-import Loader from './components/Loader/Loader';
-import Navbar from './components/Navbar/Navbar';
+import Loader from './components/Loaders/Loader';
+import Navbar from './components/Navbars/Navbar';
 
 function App() {
   const [loading , setLoading] = useState(true)
