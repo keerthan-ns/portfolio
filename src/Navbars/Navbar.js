@@ -1,7 +1,8 @@
 import React from 'react'
 import { useEffect } from 'react'
 import "./Navbar.css"
-import menuIcon from "../../icons/menuIcon.png"
+// import menuIcon from "../../icons/menuIcon.png"
+import menuIcon from "../icons/menuIcon.png"
 
 function Navbar() {
 

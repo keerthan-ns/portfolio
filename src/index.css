@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -19,7 +22,9 @@ body{
 	min-width: 100vw;
 	max-width: 100vw;
 	min-height: 100vh;
-	background-color: #111;
+	/* background-color: #111; */
+  background-color: #000e2a;
+  /* background: hsla(0, 0%, 97%, 0.081); */
   overflow-x: hidden !important;
 }
 
@@ -48,7 +53,8 @@ body{
   background: linear-gradient(62deg, rgba(4,241,192,0.9043767165069153) 0%, rgba(0,161,246,0.643872514826243) 32%, rgba(120,17,227,0.6522758761707808) 75%, rgba(214,48,199,0.5654411422772234) 100%);;
 }
 #root{
-  max-width: 100vw;
+  width: 100vw;
+  text-align: center;
 }
 
 code {

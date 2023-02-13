@@ -25,15 +25,15 @@
 	position: absolute;
 	width: 75px;
 	height: 75px;
-	/* background: #fff; */
+	/* background: #000e2a; */
 	background: hsla(0, 0%, 97%, 0.081);
-  backdrop-filter: blur(5px);
-  color: #fff;
+	backdrop-filter: blur(5px);
+	color: #fff;
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 2em;
+	font-size: 1.5rem;
 	font-weight: bold;
 	cursor: pointer;
 	transition: 0.5s;
@@ -42,7 +42,8 @@
 	transform: rotate(315deg);
 	box-shadow: 0 0 0 62px #fff;
 			/* 0 0 0 68px #fff; */
-	background: #222237;
+	/* background: #222237; */
+	background: #000e2a;
 	color: #fff;
 }
 .menu li{
@@ -67,8 +68,9 @@
 	align-items: center;
 	width: 55px;
 	height: 55px;
-	font-size: 1em;
-	color: #222237;
+	font-size: 0.85rem !important;
+	/* color: #222237; */
+	color: #000e2a;
 	transform: rotate(calc(360deg/-8 * var(--i)));
 	border-radius: 50%;
 	text-decoration: none;
@@ -94,7 +96,8 @@
 	left: 72px;
 	width: 55px;
 	height: 55px;
-	background: #222237;
+	/* background: #222237; */
+	background: #000e2a;
 	/* box-shadow: 0 0 0 6px #29fd53; */
 	box-shadow: 0 0 0 6px #f702ba;
 	border-radius: 50%;
@@ -107,7 +110,8 @@
 	left: -27.5px;
 	/* background: #29fd53; */
 	background: #f702ba;
-	box-shadow: 0 0 0 6px #222237;
+	/* box-shadow: 0 0 0 6px #222237; */
+	box-shadow: 0 0 0 4px #000e2a;
 }
 .menu li:nth-child(2).active ~ .indicator{
 	transform: translateX(-103px) rotate(0deg) ;
