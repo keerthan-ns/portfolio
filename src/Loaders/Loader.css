@@ -6,7 +6,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 70px;
+	margin: 0 auto;
+	/* margin-bottom: 70px; */
 }
 
 .ring{
@@ -203,7 +204,7 @@
 	position: absolute;
 	width: 100vw;
 	margin: 0 auto;
-	bottom: 30%;
+	bottom: 20%;
   }
   
   .glitch:before {
