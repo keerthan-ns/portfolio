@@ -2,8 +2,17 @@ import './home.css';
 import img from '../props/img2.jpg';
 import Buttons from '../button/button';
 import { BsMouse } from 'react-icons/bs';
+import React,{useEffect} from 'react';
 
 function Home() {
+  useEffect(() => {
+    const toggle = document.querySelector('.hover-show');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+    });
+  },);
+  
+
   return (
     <div id='home' className='container home-container'>
       <div className='logo'>
@@ -41,5 +50,6 @@ function Home() {
     </div>
   );
 }
+
 
 export default Home;
