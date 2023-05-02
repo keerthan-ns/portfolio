@@ -1,13 +1,13 @@
 
-.container{
-	position: relative;
-	/* width: 100%; */
+.lcontainer{
+	position: absolute;
     max-width: 100vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	/* margin-bottom: 70px; */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ring{
@@ -205,6 +205,7 @@
 	width: 100vw;
 	margin: 0 auto;
 	bottom: 20%;
+	font-family: 'Poppins' !important;
   }
   
   .glitch:before {
@@ -216,9 +217,8 @@
 	text-shadow: 1px 0 blue;
 	top: 0;
 	color: white;
-	/* background: black; */
-	/* background: #111; */
-	background: #000e2a;
+	/* background: #000e2a; */
+	background: rgb(2, 2, 26);
 	overflow: hidden;
 	clip: rect(0, 900px, 0, 0);
 	animation: noise-anim-2 3s infinite linear alternate-reverse;
@@ -233,8 +233,7 @@
 	text-shadow: -1px 0 red;
 	top: 0;
 	color: white;
-	/* background: black; */
-	background: #000e2a;
+	background: rgb(2, 2, 26);
 	overflow: hidden;
 	clip: rect(0, 900px, 0, 0);
 	animation: noise-anim 2s infinite linear alternate-reverse;

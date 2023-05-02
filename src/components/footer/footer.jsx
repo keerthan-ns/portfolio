@@ -2,8 +2,7 @@ import "./footer.css";
 import { BsMouse } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
-import { TiSocialDribbble, TiSocialGithubCircular, TiSocialTwitter, TiSocialTwitterCircular } from "react-icons/ti";
-import { TiSocialYoutube } from "react-icons/ti";
+import { TiSocialTwitter } from "react-icons/ti";
 import { TiSocialGithub } from "react-icons/ti";
 
 function Footer() {

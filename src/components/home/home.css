@@ -33,7 +33,7 @@
   cursor: pointer;
 }
 
-.home-container .logo .hover-show.active {
+/* .home-container .logo .hover-show.active {
   animation: showspin 8s linear 1s infinite;
 }
 
@@ -41,7 +41,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .home-container .logo .circle {
   position: absolute;
