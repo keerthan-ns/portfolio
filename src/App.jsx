@@ -1,8 +1,7 @@
 import './App.css';
 import { useEffect, useState } from "react"
 import Loader from './Loaders/Loader';
-import Navbar from './Navbars/Navbar';
-import Project from './components/Projects/Project';
+import Header from './components/header/header';
 
 function App() {
   const [loading , setLoading] = useState(true)
@@ -22,12 +21,11 @@ function App() {
   }
 
   return (
-    <>
-     <Project/>     
-      {/* <div className="App">
-      </div> */}
-      <Navbar/>
-    </>
+      <>
+        <div className="bg-circle1"></div>
+        <div className="bg-circle2"></div>
+        <Header/>
+      </>
   );
 }
 
