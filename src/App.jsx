@@ -30,13 +30,15 @@ function App() {
       <>
         <div className="bg-circle1"></div>
         <div className="bg-circle2"></div>
-        <Header/>
         <Navbar/>
-        <Home />
-      <About />
-      <Members />
-      <Contact />
-      <Footer />
+        <div className='h-screen'>
+          <Header/>
+          <Home />
+        </div>
+        <About />
+        <Members />
+        <Contact />
+        <Footer />
       </>
   );
 }
