@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Chathura&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
@@ -8,17 +9,21 @@
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 	text-decoration: none;
 	color: white;
+	font-family: 'Barlow Semi Condensed', sans-serif;
 	/* z-index: 1; */
 }
 
 body{
-	min-height: 100vh;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	/* min-height: 100vh; */
   	background-color: rgb(2, 2, 26);
   	/* overflow-x: hidden !important; */
-	font-family: 'Inter', sans-serif;
+	/* font-family: 'Inter', sans-serif !important; */
 	animation: move 1s linear infinite forwards;
 	text-align: center;
 }
@@ -43,7 +48,7 @@ html{
 }
 
 body::before{
-	content: '';
+	/* content: ''; */
 	position: fixed;
 	height: 200px;
 	width: 200px;
@@ -54,7 +59,7 @@ body::before{
 body::after{
 	content: '';
 	position: fixed;
-	top: 200px;
+	/* top: 200px; */
 	left: 250px;
 	height: 200px;
 	width: 200px;

@@ -2,6 +2,8 @@ import "./nav.css";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { TiCodeOutline } from "react-icons/ti";
 import { BiCodeBlock, BiMessage} from "react-icons/bi";
+import { GiSkills } from "react-icons/gi";
+import { GoFlame } from "react-icons/go";
 import React,{useEffect} from 'react';
 
 function Navbar() {
@@ -23,11 +25,6 @@ function Navbar() {
   },);
   
   return (
-    // ="active"><a href="#home">Home</a></li>
-    //             <li style={{"--i":1}}><a href="#about">About</a></li>
-    //             <li style={{"--i":2}}><a href="#skills">Skills</a></li>
-    //             <li style={{"--i":3}}><a href="#project">Projects</a></li>
-    //             <li style={{"--i":4}}><a href="#contact">Contact</a></li>
     <div className="navigation">
       <a href="#home">
         <AiOutlineHome className="icon active-nav" />
@@ -37,12 +34,13 @@ function Navbar() {
       </a>
       <a href="#skills">
         {/* <TiGroupOutline className="icon" /> */}
-        <TiCodeOutline className="icon" />
+        <GoFlame className="icon" />
         {/* <TiWaves className="icon" /> */}
       </a>
       <a href="#project">
         {/* <BsArrowDownCircle className="icon" /> */}
-        <BiCodeBlock className="icon" />
+        {/* <BiCodeBlock className="icon" /> */}
+        <TiCodeOutline className="icon" />
       </a>
       <a href="#contact">
         <BiMessage className="icon" />

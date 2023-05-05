@@ -13,7 +13,7 @@ function Home() {
   
 
   return (
-    <div id='home' className='container home-container'>
+    <div  className='container home-container'>
       <div className='logo'>
         <div className='hover-show'>
           <span className='circle'></span>
@@ -31,7 +31,7 @@ function Home() {
 
       <a href='#about' className='scroll-down'>
         <hr />
-        <h5>scroll down</h5>
+        <h5>know about me</h5>
         <BsMouse className='scroll' />
         <hr />
       </a>

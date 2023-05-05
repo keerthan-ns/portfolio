@@ -31,7 +31,7 @@ function App() {
         <div className="bg-circle1"></div>
         <div className="bg-circle2"></div>
         <Navbar/>
-        <div className='h-screen'>
+        <div id="home" className='h-screen bg-[url("./components/props/bg1.jpg")] bg-cover bg-center'>
           <Header/>
           <Home />
         </div>

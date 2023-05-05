@@ -1,7 +1,7 @@
 .abt-container {
   position: relative;
-  /* min-height: 100vh; */
-  /* padding: 50px 40px; */
+  min-height: 100vh;
+  padding: 50px 40px;
   margin-top: 7px;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@
   opacity: 1;
   font-weight: 100;
   margin-top: 1px;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
 }
 
 .about-container {
