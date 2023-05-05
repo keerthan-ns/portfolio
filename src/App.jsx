@@ -6,8 +6,9 @@ import Home from "./components/home/home";
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
 import Navbar from "./components/nav/nav";
-import Members from "./components/members/members";
+import Skills from "./components/skills/skills";
 import Footer from "./components/footer/footer";
+import Project from './components/project/project';
 
 function App() {
   const [loading , setLoading] = useState(true)
@@ -36,7 +37,8 @@ function App() {
           <Home />
         </div>
         <About />
-        <Members />
+        <Skills />
+        <Project/>
         <Contact />
         <Footer />
       </>

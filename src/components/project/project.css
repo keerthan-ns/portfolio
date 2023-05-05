@@ -1,0 +1,28 @@
+.proj-container {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 40px;
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .proj-container h2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 95%;
+    /* margin-top: 50px; */
+  }
+  
+  .proj-container h2 span {
+    font-size: 25px;
+    opacity: 0.8;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--color-pri);
+    font-family: "Open Sans Condensed", sans-serif;
+  }

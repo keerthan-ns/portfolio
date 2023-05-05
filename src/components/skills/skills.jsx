@@ -1,9 +1,9 @@
-import "./members.css";
+import "./skills.css";
 
 const Members = () => {
   return (
-    <div id="members" className="container members-container">
-      <h1 className="member-txt">Members</h1>
+    <div id="skills" className="container members-container">
+      <h1 className="member-txt">Skills</h1>
       <div className="member member-1">
         <div className="member-img"></div>
         <div className="member-info">
