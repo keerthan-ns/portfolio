@@ -89,8 +89,9 @@ function ProjectsCard(props) {
                         <a href={props.link ? props.link : props.github}>
                             <h2 target="_blank" className="hover:text-sky-800 dark:hover:text-sky-300 cursor-pointer font-semibold text-2xl uppercase  tracking-wider md:order-2"><span className="text-base ml-1 capitalize">{props.name}</span></h2>
                         </a>
-                        <div className='gap-3  md:tracking-wide inline-flex  justify-start  flex-wrap  text-sm '>
-                            {props.tech.map((ele, i) => <a className='whitespace-nowrap' key={i}  rel="noreferrer">{ele}</a>)}
+                        <div className='gap-3  md:tracking-wide inline-flex  justify-start  flex-wrap  text-sm md:font-semibold text-black '>
+                        {/* <div className='gap-3  md:tracking-wide inline-flex  justify-start  flex-wrap  text-sm md:font-semibold'> */}
+                            {props.tech.map((ele, i) => <a className='whitespace-nowrap bg-cyan-400 px-2 rounded-full' key={i}  rel="noreferrer">{ele}</a>)}
                         </div>
                         <div className={`${props.reverse ? "md:-mr-28 lg:-mr-26 xl:-mr-10" : "md:-ml-28 lg:-ml-26 xl:-ml-10"}
                     md:border-2 border-sky-700 /20 md:bg-gradient-to-tl md:text-sm from-cyan-200/40 to-gray-100/90 dark:from-slate-900/70 dark:to-gray-900/70   ease-in-out  dark:border-slate-500/50
