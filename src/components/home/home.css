@@ -54,10 +54,13 @@
   align-items: center;
   transition: 0.2s ease;
   opacity: 0;
+  visibility: hidden;
+  /* z-index: -5; */
 }
 
 .home-container .logo .hover-show.active .circle {
   opacity: 1;
+  visibility: visible;
 }
 
 .home-container .logo .hover-show.active .circle:nth-child(1) {

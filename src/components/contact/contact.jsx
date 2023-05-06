@@ -43,7 +43,7 @@ function Contact() {
               field="message"
               errors={state.errors}
             />
-            <button className='bg-gradient-to-t from-indigo-700 to-blue-500 rounded-md text-lg font-semibold active:bg-violet-900 active:scale-[0.95] transition-all duration-100' type="submit" disabled={state.submitting}>Submit</button>
+            <button className='bg-gradient-to-t from-purple-700 to-pink-500 rounded-md text-lg font-semibold active:bg-violet-900 active:scale-[0.95] transition-all duration-100' type="submit" disabled={state.submitting}>Submit</button>
           </form>
       </div>
     </div>

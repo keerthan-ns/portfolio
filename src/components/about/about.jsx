@@ -1,6 +1,4 @@
 import "./about.css"
-import Qualifications from "../qualifications/qualifications"
-import Buttons from '../button/button'
 import {motion} from 'framer-motion'
 
 const education=[
@@ -89,11 +87,7 @@ function About() {
             </div>
           </div>
         </div>
-        {/* <Buttons/> */}
       </div>
-      {/* <div className="container about-container">
-        <Qualifications />
-      </div> */}
     </>
   );
 }
