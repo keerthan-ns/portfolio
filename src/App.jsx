@@ -5,7 +5,7 @@ import Header from "./components/header/header";
 import Home from "./components/home/home";
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
-import Skills from "./components/skills/skills";
+import Techs from "./components/tech/tech";
 import Footer from "./components/footer/footer";
 import Project from './components/project/project';
 import Navbar from "./components/nav/nav";
@@ -41,7 +41,7 @@ function App() {
           <About />
         </section>
         <section id='skillsSect'>
-          <Skills />
+          <Techs />
         </section>
         <section id='projectSect'>
           <Project/>

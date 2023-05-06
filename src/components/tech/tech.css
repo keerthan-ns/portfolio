@@ -1,20 +1,32 @@
-.member-txt {
-  font-size: 20px;
-  top: 10px;
-  font-weight: 100;
+.tech-container {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 40px;
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.members-container {
+.tech-container h2{
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  min-height: 100vh;
-  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  max-width: 95%;
 }
 
-.members-container .member {
+.tech-container h2 span {
+  font-size: 25px;
+  opacity: 0.8;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--color-pri);
+  font-family: "Open Sans Condensed", sans-serif;
+}
+/* 
+.skills-container .skills {
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -26,7 +38,7 @@
   padding: 20px;
   border-radius: 50px;
 }
-.members-container .member .member-img {
+.skills-container .skills .skills-img {
   height: 300px;
   width: 300px;
   border-radius: 40px;
@@ -36,28 +48,28 @@
   border: 2px solid var(--color-sec-light);
 }
 
-.members-container .member .member-info {
+.skills-container .skills .skills-info {
   margin-left: 50px;
   font-family: "Open Sans Condensed";
   max-width: 50%;
 }
 
-.members-container .member .member-info .name {
+.skills-container .skills .skills-info .name {
   font-size: 40px;
   font-weight: 500;
   letter-spacing: 2px;
 }
-.members-container .member .member-info .position {
+.skills-container .skills .skills-info .position {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 2px;
 }
-.members-container .member .member-info .about {
+.skills-container .skills .skills-info .about {
   margin-top: 40px;
   font-weight: 100;
   font-size: 17px;
 }
-.members-container .member .member-info .contact-member {
+.skills-container .skills .skills-info .contact-skills {
   background-color: var(--color-sec-light);
   padding: 17px 35px;
   font-size: 18px;
@@ -66,16 +78,16 @@
   position: absolute;
   transition: 0.1s ease;
 }
-.members-container .member .member-info .contact-member span {
+.skills-container .skills .skills-info .contact-skills span {
   text-transform: capitalize;
 }
-.members-container .member .member-info .contact-member:hover {
+.skills-container .skills .skills-info .contact-skills:hover {
   background-color: transparent;
   border: 2px solid var(--color-sec-light);
 }
 
 @media (max-width: 820px) {
-  .members-container {
+  .skills-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -86,7 +98,7 @@
     width: 90%;
   }
 
-  .members-container .member {
+  .skills-container .skills {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -99,7 +111,7 @@
     border-radius: 50px;
     backdrop-filter: blur(20px);
   }
-  .members-container .member .member-img {
+  .skills-container .skills .skills-img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -109,7 +121,7 @@
     border: 2px solid var(--color-sec-light);
   }
 
-  .members-container .member .member-info {
+  .skills-container .skills .skills-info {
     position: relative;
     margin-left: 10px;
     font-family: "Open Sans Condensed";
@@ -120,22 +132,22 @@
     align-items: flex-start;
   }
 
-  .members-container .member .member-info .name {
+  .skills-container .skills .skills-info .name {
     font-size: 30px;
     font-weight: 500;
     letter-spacing: 2px;
   }
-  .members-container .member .member-info .position {
+  .skills-container .skills .skills-info .position {
     font-size: 25px;
     font-weight: 200;
     letter-spacing: 2px;
   }
-  .members-container .member .member-info .about {
+  .skills-container .skills .skills-info .about {
     margin-top: 10px;
     font-weight: 100;
     font-size: 28px;
   }
-  .members-container .member .member-info a.contact-member {
+  .skills-container .skills .skills-info a.contact-skills {
     background-color: var(--color-sec-light);
     padding: 15px 25px;
     font-size: 25px;
@@ -148,7 +160,7 @@
 }
 
 @media (max-width: 500px) {
-  .members-container {
+  .skills-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -158,7 +170,7 @@
     margin-top: 100px;
   }
 
-  .members-container .member {
+  .skills-container .skills {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -171,7 +183,7 @@
     border-radius: 50px;
     backdrop-filter: blur(20px);
   }
-  .members-container .member .member-img {
+  .skills-container .skills .skills-img {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -181,7 +193,7 @@
     border: 2px solid var(--color-sec-light);
   }
 
-  .members-container .member .member-info {
+  .skills-container .skills .skills-info {
     position: relative;
     margin-left: 10px;
     font-family: "Open Sans Condensed";
@@ -192,22 +204,22 @@
     align-items: flex-start;
   }
 
-  .members-container .member .member-info .name {
+  .skills-container .skills .skills-info .name {
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 2px;
   }
-  .members-container .member .member-info .position {
+  .skills-container .skills .skills-info .position {
     font-size: 12px;
     font-weight: 200;
     letter-spacing: 2px;
   }
-  .members-container .member .member-info .about {
+  .skills-container .skills .skills-info .about {
     margin-top: 10px;
     font-weight: 100;
     font-size: 16px;
   }
-  .members-container .member .member-info a.contact-member {
+  .skills-container .skills .skills-info a.contact-skills {
     background-color: var(--color-sec-light);
     padding: 15px 25px;
     font-size: 15px;
@@ -220,7 +232,7 @@
 }
 
 @media (max-width: 420px) {
-  .members-container {
+  .skills-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -230,7 +242,7 @@
     margin-top: 10px;
   }
 
-  .members-container .member {
+  .skills-container .skills {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -243,7 +255,7 @@
     border-radius: 50px;
     backdrop-filter: blur(20px);
   }
-  .members-container .member .member-img {
+  .skills-container .skills .skills-img {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -253,7 +265,7 @@
     border: 2px solid var(--color-sec-light);
   }
 
-  .members-container .member .member-info {
+  .skills-container .skills .skills-info {
     position: relative;
     margin-left: 10px;
     font-family: "Open Sans Condensed";
@@ -264,22 +276,22 @@
     align-items: flex-start;
   }
 
-  .members-container .member .member-info .name {
+  .skills-container .skills .skills-info .name {
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 2px;
   }
-  .members-container .member .member-info .position {
+  .skills-container .skills .skills-info .position {
     font-size: 12px;
     font-weight: 200;
     letter-spacing: 2px;
   }
-  .members-container .member .member-info .about {
+  .skills-container .skills .skills-info .about {
     margin-top: 10px;
     font-weight: 100;
     font-size: 16px;
   }
-  .members-container .member .member-info a.contact-member {
+  .skills-container .skills .skills-info a.contact-skills {
     background-color: var(--color-sec-light);
     padding: 15px 25px;
     font-size: 15px;
@@ -292,7 +304,7 @@
 }
 
 @media (max-width: 400px) {
-  .members-container {
+  .skills-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -303,7 +315,7 @@
     padding: 10px;
   }
 
-  .members-container .member {
+  .skills-container .skills {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -316,7 +328,7 @@
     border-radius: 50px;
     backdrop-filter: blur(20px);
   }
-  .members-container .member .member-img {
+  .skills-container .skills .skills-img {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -326,7 +338,7 @@
     border: 2px solid var(--color-sec-light);
   }
 
-  .members-container .member .member-info {
+  .skills-container .skills .skills-info {
     position: relative;
     margin-left: 10px;
     font-family: "Open Sans Condensed";
@@ -337,22 +349,22 @@
     align-items: flex-start;
   }
 
-  .members-container .member .member-info .name {
+  .skills-container .skills .skills-info .name {
     font-size: 19px;
     font-weight: 500;
     letter-spacing: 2px;
   }
-  .members-container .member .member-info .position {
+  .skills-container .skills .skills-info .position {
     font-size: 14px;
     font-weight: 200;
     letter-spacing: 2px;
   }
-  .members-container .member .member-info .about {
+  .skills-container .skills .skills-info .about {
     margin-top: 10px;
     font-weight: 100;
     font-size: 18px;
   }
-  .members-container .member .member-info a.contact-member {
+  .skills-container .skills .skills-info a.contact-skills {
     background-color: var(--color-sec-light);
     padding: 15px 25px;
     font-size: 15px;
@@ -365,7 +377,7 @@
 }
 
 @media (max-width: 375px) {
-  .members-container {
+  .skills-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -376,7 +388,7 @@
     padding: 10px;
   }
 
-  .members-container .member {
+  .skills-container .skills {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -389,7 +401,7 @@
     border-radius: 50px;
     backdrop-filter: blur(20px);
   }
-  .members-container .member .member-img {
+  .skills-container .skills .skills-img {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -399,7 +411,7 @@
     border: 2px solid var(--color-sec-light);
   }
 
-  .members-container .member .member-info {
+  .skills-container .skills .skills-info {
     position: relative;
     margin-left: 10px;
     font-family: "Open Sans Condensed";
@@ -410,22 +422,22 @@
     align-items: flex-start;
   }
 
-  .members-container .member .member-info .name {
+  .skills-container .skills .skills-info .name {
     font-size: 19px;
     font-weight: 500;
     letter-spacing: 2px;
   }
-  .members-container .member .member-info .position {
+  .skills-container .skills .skills-info .position {
     font-size: 14px;
     font-weight: 200;
     letter-spacing: 2px;
   }
-  .members-container .member .member-info .about {
+  .skills-container .skills .skills-info .about {
     margin-top: 10px;
     font-weight: 100;
     font-size: 16px;
   }
-  .members-container .member .member-info a.contact-member {
+  .skills-container .skills .skills-info a.contact-skills {
     background-color: var(--color-sec-light);
     padding: 15px 25px;
     font-size: 15px;
@@ -435,4 +447,4 @@
     top: -55px;
     right: 5px;
   }
-}
+} */
