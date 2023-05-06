@@ -2,10 +2,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   min-height: 30vh;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   margin-bottom: 80px;
 }
 
@@ -21,7 +21,7 @@
 .container.footer-container h2 {
   font-family: "Open Sans Condensed";
   font-weight: 100;
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 15px;
   cursor: pointer;
   display: flex;
@@ -32,13 +32,18 @@
   padding: 10px 20px;
   border-radius: 5px;
 }
+.container.footer-container h3{
+  display: flex;
+  flex-direction: column;
+}
 .container.footer-container h2:hover {
   background-color: rgba(0, 0, 0, 0.068);
 }
 
 .social-links {
   padding: 10px;
-  margin: 20px auto;
+  /* margin: 20px auto; */
+  margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -59,4 +64,7 @@
 .social-links .social:hover {
   background-color: rgba(255, 255, 255, 0.336);
   fill: var(--color-pri);
+}
+.container .footer-container .designed{
+  width: 110%;
 }

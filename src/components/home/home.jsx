@@ -1,8 +1,9 @@
-import './home.css';
-import img from '../props/avatar.jpg';
-import { BsMouse } from 'react-icons/bs';
-import React,{useEffect} from 'react';
-import {AiFillGithub, AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
+import './home.css'
+import img from '../props/avatar.jpg'
+import { BsMouse } from 'react-icons/bs'
+import React,{useEffect} from 'react'
+import {AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle} from 'react-icons/ai'
+import { MdMail } from "react-icons/md"
 
 function Home() {
   useEffect(() => {
@@ -22,11 +23,11 @@ function Home() {
         <div className='hover-show'>
           <span className='circle'><AiFillGithub className='w-12 h-12'/></span>
           <span className='circle'><AiFillInstagram className='w-12 h-12'/></span>
-          <span className='circle'></span>
+          <span className='circle'><AiFillTwitterCircle className='w-12 h-12'/></span>
           <span className=''></span>
           <span className=''></span>
           <span className=''></span>
-          <span className='circle'></span>
+          <span className='circle'><MdMail className='w-12 h-12'/></span>
           <span className='circle'><AiFillLinkedin className='w-12 h-12'/></span>
         </div>
 
