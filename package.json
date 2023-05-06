@@ -11,6 +11,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-scroll-parallax": "^3.4.2",
+    "react-simple-typewriter": "^5.0.1",
     "swiper": "^9.2.4",
     "web-vitals": "^2.1.4"
   },
