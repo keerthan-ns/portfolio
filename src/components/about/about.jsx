@@ -36,10 +36,10 @@ function About() {
       <div id="about" className='container abt-container'>
         <h2>
           <span>About Me</span> <br />
-          <p className='indent-10 text-justify'>
+          <p className=' indent-10 text-justify'>
             I am currently pursuing BE in Computer Science and  I have a strong interest in web development.
-            I am working working on becoming a full-stack web developer. I find the process of creating websites and applications very satisfying and I enjoy the challenges that comes with it.
-          In my free time, you can find me watching movies or gaming. It is a great way to unwind and relax after a long day. I enjoy playing games from various
+            I am also working on becoming a full-stack web developer. I find the process of creating web applications and mobile apps very satisfying and I enjoy the challenges that comes with it.
+            In my free time, you can find me watching movies or gaming. It is a great way to unwind and relax after a long day. I enjoy playing games from various
             genres, including Open-world like GTA5, strategy, racing games.
           </p>
         </h2>
