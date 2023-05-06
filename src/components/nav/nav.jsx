@@ -22,28 +22,48 @@ function Navbar() {
         icon.classList.remove('active-nav');
       });
     }
+    const sections = document.querySelectorAll("section");
+    
+    window.onscroll = () => {
+      var current = "";
+    
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.scrollY >= sectionTop-100) {
+          current = "";
+          current = section.getAttribute("id");
+        }
+      });
+    
+      Icons.forEach((icon) => {
+        icon.classList.remove("active-nav");
+        if (icon.classList.contains(current)) {
+          icon.classList.add("active-nav");
+        }
+      });
+    };
   },);
   
   return (
     <div className="navigation">
       <a href="#home">
-        <AiOutlineHome className="icon active-nav" />
+        <AiOutlineHome className="icon active-nav homeSect" />
       </a>
       <a href="#about">
-        <AiOutlineUser className="icon" />
+        <AiOutlineUser className="icon aboutSect" />
       </a>
       <a href="#skills">
         {/* <TiGroupOutline className="icon" /> */}
-        <GoFlame className="icon" />
+        <GoFlame className="icon skillsSect" />
         {/* <TiWaves className="icon" /> */}
       </a>
       <a href="#project">
         {/* <BsArrowDownCircle className="icon" /> */}
         {/* <BiCodeBlock className="icon" /> */}
-        <TiCodeOutline className="icon" />
+        <TiCodeOutline className="icon projectSect" />
       </a>
       <a href="#contact">
-        <BiMessage className="icon" />
+        <BiMessage className="icon contactSect" />
       </a>
     </div>
   );
