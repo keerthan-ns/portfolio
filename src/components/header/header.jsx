@@ -7,9 +7,9 @@ function Header() {
     <div id='home' className='containerH header-container'>
       <h3>
         <p>
-          Hello there<span>!</span>
-        </p>
-        <p>
+          Hello there<span>!  </span>
+        {/* </p>
+        <p> */}
           I<span>'</span>m
         </p>
         Keerthan NS
