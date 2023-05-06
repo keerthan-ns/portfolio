@@ -40,7 +40,7 @@ function App() {
         <section id='aboutSect'>
           <About />
         </section>
-        <section id='skillsSect'>
+        <section id='techSect'>
           <Techs />
         </section>
         <section id='projectSect'>

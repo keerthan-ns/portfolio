@@ -255,8 +255,9 @@
 
   .home-container img {
     position: absolute;
-    height: 250px;
+    /* height: 250px; */
     width: 250px;
+    height: auto;
     border-radius: 50%;
     border: 3px solid rgb(108, 161, 197);
     transform: translate(-200px);

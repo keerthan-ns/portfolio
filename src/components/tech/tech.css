@@ -25,20 +25,53 @@
   border-bottom: 2px solid var(--color-pri);
   font-family: "Open Sans Condensed", sans-serif;
 }
-/* 
-.skills-container .skills {
+
+.tech-container .tech {
   position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 120%;
+  margin-top: 15px;
+  /* margin-bottom: 50px; */
+  /* background: rgba(0, 0, 0, 0.116); */
+  background: var(--color-sec-light);
+  padding: 20px;
+  border: 1px solid var(--color-sec);
+  border-radius: 30px;
+}
+.tech-container .tech h3{
+  font-size: 19px;
+  color: var(--color-pri);
+  border-bottom: 1px solid white;
+}
+
+.tech-container .tech div{
+  position: relative;
+  display: flex;
+  /* flex-wrap: wrap; */
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
   margin-top: 15px;
-  margin-bottom: 50px;
-  background: rgba(0, 0, 0, 0.116);
-  padding: 20px;
-  border-radius: 50px;
 }
-.skills-container .skills .skills-img {
+
+.tech-container .tech span{
+  background: rgba(0, 0, 0, 0.116);
+  color: var(--color-pri);
+  border: 1px solid white;
+  border-radius: 8px;
+  @apply px-4 py-2;
+  cursor: pointer;
+}
+.tech-container .tech span:hover{
+  background: linear-gradient(62deg, rgba(120,17,227,0.8565477216277135) 35%, rgba(214,48,199,0.8957634079022234) 100%);
+  color: white;
+  border: 1px solid var(--color-pri);
+}
+/* 
+.tech-container .tech .tech-img {
   height: 300px;
   width: 300px;
   border-radius: 40px;
@@ -48,28 +81,28 @@
   border: 2px solid var(--color-sec-light);
 }
 
-.skills-container .skills .skills-info {
+.tech-container .tech .tech-info {
   margin-left: 50px;
   font-family: "Open Sans Condensed";
   max-width: 50%;
 }
 
-.skills-container .skills .skills-info .name {
+.tech-container .tech .tech-info .name {
   font-size: 40px;
   font-weight: 500;
   letter-spacing: 2px;
 }
-.skills-container .skills .skills-info .position {
+.tech-container .tech .tech-info .position {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 2px;
 }
-.skills-container .skills .skills-info .about {
+.tech-container .tech .tech-info .about {
   margin-top: 40px;
   font-weight: 100;
   font-size: 17px;
 }
-.skills-container .skills .skills-info .contact-skills {
+.tech-container .tech .tech-info .contact-tech {
   background-color: var(--color-sec-light);
   padding: 17px 35px;
   font-size: 18px;
@@ -78,16 +111,16 @@
   position: absolute;
   transition: 0.1s ease;
 }
-.skills-container .skills .skills-info .contact-skills span {
+.tech-container .tech .tech-info .contact-tech span {
   text-transform: capitalize;
 }
-.skills-container .skills .skills-info .contact-skills:hover {
+.tech-container .tech .tech-info .contact-tech:hover {
   background-color: transparent;
   border: 2px solid var(--color-sec-light);
 }
 
 @media (max-width: 820px) {
-  .skills-container {
+  .tech-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -98,7 +131,7 @@
     width: 90%;
   }
 
-  .skills-container .skills {
+  .tech-container .tech {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -111,7 +144,7 @@
     border-radius: 50px;
     backdrop-filter: blur(20px);
   }
-  .skills-container .skills .skills-img {
+  .tech-container .tech .tech-img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -121,7 +154,7 @@
     border: 2px solid var(--color-sec-light);
   }
 
-  .skills-container .skills .skills-info {
+  .tech-container .tech .tech-info {
     position: relative;
     margin-left: 10px;
     font-family: "Open Sans Condensed";
@@ -132,22 +165,22 @@
     align-items: flex-start;
   }
 
-  .skills-container .skills .skills-info .name {
+  .tech-container .tech .tech-info .name {
     font-size: 30px;
     font-weight: 500;
     letter-spacing: 2px;
   }
-  .skills-container .skills .skills-info .position {
+  .tech-container .tech .tech-info .position {
     font-size: 25px;
     font-weight: 200;
     letter-spacing: 2px;
   }
-  .skills-container .skills .skills-info .about {
+  .tech-container .tech .tech-info .about {
     margin-top: 10px;
     font-weight: 100;
     font-size: 28px;
   }
-  .skills-container .skills .skills-info a.contact-skills {
+  .tech-container .tech .tech-info a.contact-tech {
     background-color: var(--color-sec-light);
     padding: 15px 25px;
     font-size: 25px;
@@ -160,7 +193,7 @@
 }
 
 @media (max-width: 500px) {
-  .skills-container {
+  .tech-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -170,7 +203,7 @@
     margin-top: 100px;
   }
 
-  .skills-container .skills {
+  .tech-container .tech {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -183,7 +216,7 @@
     border-radius: 50px;
     backdrop-filter: blur(20px);
   }
-  .skills-container .skills .skills-img {
+  .tech-container .tech .tech-img {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -193,7 +226,7 @@
     border: 2px solid var(--color-sec-light);
   }
 
-  .skills-container .skills .skills-info {
+  .tech-container .tech .tech-info {
     position: relative;
     margin-left: 10px;
     font-family: "Open Sans Condensed";
@@ -204,22 +237,22 @@
     align-items: flex-start;
   }
 
-  .skills-container .skills .skills-info .name {
+  .tech-container .tech .tech-info .name {
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 2px;
   }
-  .skills-container .skills .skills-info .position {
+  .tech-container .tech .tech-info .position {
     font-size: 12px;
     font-weight: 200;
     letter-spacing: 2px;
   }
-  .skills-container .skills .skills-info .about {
+  .tech-container .tech .tech-info .about {
     margin-top: 10px;
     font-weight: 100;
     font-size: 16px;
   }
-  .skills-container .skills .skills-info a.contact-skills {
+  .tech-container .tech .tech-info a.contact-tech {
     background-color: var(--color-sec-light);
     padding: 15px 25px;
     font-size: 15px;
@@ -232,7 +265,7 @@
 }
 
 @media (max-width: 420px) {
-  .skills-container {
+  .tech-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -242,7 +275,7 @@
     margin-top: 10px;
   }
 
-  .skills-container .skills {
+  .tech-container .tech {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -255,7 +288,7 @@
     border-radius: 50px;
     backdrop-filter: blur(20px);
   }
-  .skills-container .skills .skills-img {
+  .tech-container .tech .tech-img {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -265,7 +298,7 @@
     border: 2px solid var(--color-sec-light);
   }
 
-  .skills-container .skills .skills-info {
+  .tech-container .tech .tech-info {
     position: relative;
     margin-left: 10px;
     font-family: "Open Sans Condensed";
@@ -276,22 +309,22 @@
     align-items: flex-start;
   }
 
-  .skills-container .skills .skills-info .name {
+  .tech-container .tech .tech-info .name {
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 2px;
   }
-  .skills-container .skills .skills-info .position {
+  .tech-container .tech .tech-info .position {
     font-size: 12px;
     font-weight: 200;
     letter-spacing: 2px;
   }
-  .skills-container .skills .skills-info .about {
+  .tech-container .tech .tech-info .about {
     margin-top: 10px;
     font-weight: 100;
     font-size: 16px;
   }
-  .skills-container .skills .skills-info a.contact-skills {
+  .tech-container .tech .tech-info a.contact-tech {
     background-color: var(--color-sec-light);
     padding: 15px 25px;
     font-size: 15px;
@@ -304,7 +337,7 @@
 }
 
 @media (max-width: 400px) {
-  .skills-container {
+  .tech-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -315,7 +348,7 @@
     padding: 10px;
   }
 
-  .skills-container .skills {
+  .tech-container .tech {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -328,7 +361,7 @@
     border-radius: 50px;
     backdrop-filter: blur(20px);
   }
-  .skills-container .skills .skills-img {
+  .tech-container .tech .tech-img {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -338,7 +371,7 @@
     border: 2px solid var(--color-sec-light);
   }
 
-  .skills-container .skills .skills-info {
+  .tech-container .tech .tech-info {
     position: relative;
     margin-left: 10px;
     font-family: "Open Sans Condensed";
@@ -349,22 +382,22 @@
     align-items: flex-start;
   }
 
-  .skills-container .skills .skills-info .name {
+  .tech-container .tech .tech-info .name {
     font-size: 19px;
     font-weight: 500;
     letter-spacing: 2px;
   }
-  .skills-container .skills .skills-info .position {
+  .tech-container .tech .tech-info .position {
     font-size: 14px;
     font-weight: 200;
     letter-spacing: 2px;
   }
-  .skills-container .skills .skills-info .about {
+  .tech-container .tech .tech-info .about {
     margin-top: 10px;
     font-weight: 100;
     font-size: 18px;
   }
-  .skills-container .skills .skills-info a.contact-skills {
+  .tech-container .tech .tech-info a.contact-tech {
     background-color: var(--color-sec-light);
     padding: 15px 25px;
     font-size: 15px;
@@ -377,7 +410,7 @@
 }
 
 @media (max-width: 375px) {
-  .skills-container {
+  .tech-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -388,7 +421,7 @@
     padding: 10px;
   }
 
-  .skills-container .skills {
+  .tech-container .tech {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -401,7 +434,7 @@
     border-radius: 50px;
     backdrop-filter: blur(20px);
   }
-  .skills-container .skills .skills-img {
+  .tech-container .tech .tech-img {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -411,7 +444,7 @@
     border: 2px solid var(--color-sec-light);
   }
 
-  .skills-container .skills .skills-info {
+  .tech-container .tech .tech-info {
     position: relative;
     margin-left: 10px;
     font-family: "Open Sans Condensed";
@@ -422,22 +455,22 @@
     align-items: flex-start;
   }
 
-  .skills-container .skills .skills-info .name {
+  .tech-container .tech .tech-info .name {
     font-size: 19px;
     font-weight: 500;
     letter-spacing: 2px;
   }
-  .skills-container .skills .skills-info .position {
+  .tech-container .tech .tech-info .position {
     font-size: 14px;
     font-weight: 200;
     letter-spacing: 2px;
   }
-  .skills-container .skills .skills-info .about {
+  .tech-container .tech .tech-info .about {
     margin-top: 10px;
     font-weight: 100;
     font-size: 16px;
   }
-  .skills-container .skills .skills-info a.contact-skills {
+  .tech-container .tech .tech-info a.contact-tech {
     background-color: var(--color-sec-light);
     padding: 15px 25px;
     font-size: 15px;

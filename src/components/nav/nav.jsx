@@ -53,9 +53,9 @@ function Navbar() {
       <a href="#about">
         <AiOutlineUser className="icon aboutSect" />
       </a>
-      <a href="#skills">
+      <a href="#tech">
         {/* <TiGroupOutline className="icon" /> */}
-        <GoFlame className="icon skillsSect" />
+        <GoFlame className="icon techSect" />
         {/* <TiWaves className="icon" /> */}
       </a>
       <a href="#project">
