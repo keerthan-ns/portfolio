@@ -47,6 +47,7 @@ function Navbar() {
   return (
     <div className="navigation">
       <a href="#home">
+      {/* <a href="/"> */}
         <AiOutlineHome className="icon active-nav homeSect" />
       </a>
       <a href="#about">
