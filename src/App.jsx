@@ -32,7 +32,7 @@ function App() {
         <div className="bg-circle1"></div>
         <div className="bg-circle2"></div>
         <section id='homeSect'>
-          <div id="home" className='h-screen bg-[url("./components/props/bg1.jpg")] bg-cover bg-center'>
+          <div id="home" className='h-screen bg-[url("https://res.cloudinary.com/dg7etzwks/image/upload/v1683643876/portfolioProjects/k0e6d6uhxc3aety2saca.jpg")] bg-cover bg-center'>
             <Header/>
             <Home />
           </div>

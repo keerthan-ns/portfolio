@@ -5,6 +5,7 @@ import React,{useEffect} from 'react'
 import {AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle} from 'react-icons/ai'
 import { MdMail } from "react-icons/md"
 import { contact } from '../../data/data'
+import {Img} from 'react-image'
 
 function Home() {
   useEffect(() => {
@@ -32,7 +33,7 @@ function Home() {
           <span className=''></span>
         </div>
 
-        <img src={img} alt='' />
+        <Img src={"https://res.cloudinary.com/dg7etzwks/image/upload/v1683643864/portfolioProjects/toir32dyan8dyxzlmdxb.jpg"}/>
       </div>
       <h4 className='tapMe'>Tap on avatar !!</h4>
 
