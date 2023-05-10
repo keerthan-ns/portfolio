@@ -8,7 +8,6 @@ import { Autoplay } from 'swiper'
 import {projects} from './projectInfo'
 import { Parallax,ParallaxProvider } from 'react-scroll-parallax'
 import useBreakpoints from '../../hooks/useBreakpoint'
-import { Img } from 'react-image'
 import { contact } from '../../data/data'
 import LoadingSpinner from '../spinner/spinner'
 
@@ -63,7 +62,7 @@ function ProjectsCard(props) {
                     md:border-none md:bg-none
                 '>
             <div className={` flex-auto  ${props.reverse ? "md:-translate-x-10" : "md:translate-x-10"}  w-auto  md:p-0 `}>
-                <Img src={props.src}
+                <img src={props.src}
                     className="md:max-w-lg md:grayscale transition-colors transform duration-100 ease-in-out group-hover:grayscale-0 "
                     alt='project source' loader={<LoadingSpinner/>}/>
             </div>
