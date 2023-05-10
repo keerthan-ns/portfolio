@@ -1,9 +1,10 @@
 import React,{useState} from 'react'
 import "./project.css"
 import {AiFillGithub} from 'react-icons/ai'
+import { BsLink45Deg } from 'react-icons/bs'
 import {Swiper,SwiperSlide} from 'swiper/react'
 import 'swiper/css'
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
 import { Autoplay } from 'swiper'
 import {projects} from './projectInfo'
 import { Parallax,ParallaxProvider } from 'react-scroll-parallax'
@@ -90,7 +91,7 @@ function ProjectsCard(props) {
                             {
                                 props.link &&
                                 <a href={props.link} target="_blank"  rel="noreferrer">
-                                    <FaExternalLinkAlt className="hover:text-sky-800 dark:hover:text-sky-300 " />
+                                    <BsLink45Deg className="hover:text-sky-800 dark:hover:text-sky-300 " />
                                 </a>
                             }
                         </div>
