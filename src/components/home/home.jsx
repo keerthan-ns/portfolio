@@ -6,6 +6,7 @@ import {AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle} from
 import { MdMail } from "react-icons/md"
 import { contact } from '../../data/data'
 import {Img} from 'react-image'
+import LoadingSpinner from '../spinner/spinner'
 
 function Home() {
   useEffect(() => {
@@ -33,7 +34,7 @@ function Home() {
           <span className=''></span>
         </div>
 
-        <Img src={"https://res.cloudinary.com/dg7etzwks/image/upload/v1683643864/portfolioProjects/toir32dyan8dyxzlmdxb.jpg"}/>
+        <Img src={"https://res.cloudinary.com/dg7etzwks/image/upload/v1683643864/portfolioProjects/toir32dyan8dyxzlmdxb.jpg"} loader={<LoadingSpinner/>}/>
       </div>
       <h4 className='tapMe'>Tap on avatar !!</h4>
 

@@ -11,6 +11,7 @@ import { Parallax,ParallaxProvider } from 'react-scroll-parallax'
 import useBreakpoints from '../../hooks/useBreakpoint'
 import { Img } from 'react-image'
 import { contact } from '../../data/data'
+import LoadingSpinner from '../spinner/spinner'
 
 function Project() {
     const [active,setActive] = useState(3);
@@ -20,7 +21,7 @@ function Project() {
             <h2>
                 <span>Projects</span>
             </h2>
-                <span><a href={contact.github} className='inline-flex'>More projects...<AiFillGithub className='self-center'/></a></span>
+                <span><a href={contact.github} className='inline-flex' target='_blank' rel="noreferrer">More projects...<AiFillGithub className='self-center'/></a></span>
             <div className='max-w-full self-center mt-4'>
                 <Swiper
                 spaceBetween={50}
@@ -29,7 +30,7 @@ function Project() {
                 loop={true}
                 centeredSlides={true}
                 speed={800}
-                // autoplay={{delay:3000,}}
+                autoplay={{delay:3000,}}
                 modules={[Autoplay]}
                 >
                 {projects.projects.map((item,i)=>(
@@ -54,7 +55,6 @@ function Project() {
                         <ProjectsCard
                             // name={<>Portfolio<span className="text-base ml-1 capitalize">(This website)</span></>}
                             name={item.title}
-                            // tech={["Next JS", "Tailwind Css", "Three JS"]}
                             tech={item.tags}
                             src={item.img}
                             description={item.description}
@@ -84,7 +84,7 @@ function ProjectsCard(props) {
             <div className={` flex-auto  ${props.reverse ? "md:-translate-x-10" : "md:translate-x-10"}  w-auto  md:p-0 `}>
                 <Img src={props.src}
                     className="md:max-w-lg md:grayscale transition-colors transform duration-100 ease-in-out group-hover:grayscale-0 "
-                    alt='project source'/>
+                    alt='project source' loader={<LoadingSpinner/>}/>
             </div>
             <div className={`min-w-fit order-first   ${props.reverse ? "md:order-first md:translate-x-10" : " md:text-end md:order-2 md:-translate-x-10"}`}>
                 <ParallaxProvider>
@@ -92,11 +92,11 @@ function ProjectsCard(props) {
                         <a href={props.link ? props.link : props.github}>
                             <h2 target="_blank" className="hover:text-sky-800 dark:hover:text-sky-300 cursor-pointer font-semibold text-2xl uppercase  tracking-wider md:order-2"><span className="text-base ml-1 capitalize">{props.name}</span></h2>
                         </a>
-                        <div className='gap-3  md:tracking-wide inline-flex  justify-start  flex-wrap  text-sm md:font-semibold text-black '>
+                        <div className='gap-3  md:tracking-wide inline-flex  justify-start  flex-wrap  text-sm md:font-semibold text-black cursor-default'>
                         {/* <div className='gap-3  md:tracking-wide inline-flex  justify-start  flex-wrap  text-sm md:font-semibold'> */}
-                            {props.tech.map((ele, i) => <a className='whitespace-nowrap bg-cyan-400 px-2 rounded-full' key={i}  rel="noreferrer">{ele}</a>)}
+                            {props.tech.map((ele, i) => <a className='whitespace-nowrap bg-cyan-400 px-2 rounded-full border border-violet-600 ' key={i}  rel="noreferrer">{ele}</a>)}
                         </div>
-                        <div className={ `${props.reverse ? "md:-mr-28 lg:-mr-26 xl:-mr-10" : "md:-ml-28 lg:-ml-26 xl:-ml-10"}
+                        <div className={ `${props.reverse ? "md:-mr-28 lg:-mr-26 xl:-mr-10" : "md:-ml-28 lg:-ml-26 xl:-ml-10 cursor-default"}
                     md:border-2 border-sky-700 /20 md:bg-gradient-to-tl md:text-sm from-cyan-200/40 to-gray-100/90 dark:from-slate-900/70 dark:to-gray-900/70   ease-in-out  dark:border-slate-500/50
                         transform ease-liner    md:p-5  rounded-xl  mx-auto md:backdrop-blur-md `}>
                             {props.description}
