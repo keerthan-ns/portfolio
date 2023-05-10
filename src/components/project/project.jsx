@@ -96,7 +96,7 @@ function ProjectsCard(props) {
                         {/* <div className='gap-3  md:tracking-wide inline-flex  justify-start  flex-wrap  text-sm md:font-semibold'> */}
                             {props.tech.map((ele, i) => <a className='whitespace-nowrap bg-cyan-400 px-2 rounded-full' key={i}  rel="noreferrer">{ele}</a>)}
                         </div>
-                        <div className={ `${props.reverse ? "md:-mr-28 lg:-mr-26 xl:-mr-10" : "md:-ml-28 lg:-ml-26 xl:-ml-10"}max-w-full
+                        <div className={ `${props.reverse ? "md:-mr-28 lg:-mr-26 xl:-mr-10" : "md:-ml-28 lg:-ml-26 xl:-ml-10"}
                     md:border-2 border-sky-700 /20 md:bg-gradient-to-tl md:text-sm from-cyan-200/40 to-gray-100/90 dark:from-slate-900/70 dark:to-gray-900/70   ease-in-out  dark:border-slate-500/50
                         transform ease-liner    md:p-5  rounded-xl  mx-auto md:backdrop-blur-md `}>
                             {props.description}

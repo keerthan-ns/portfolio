@@ -30,7 +30,6 @@ function Navbar() {
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         if (window.scrollY >= sectionTop-100) {
-          current = "";
           current = section.getAttribute("id");
         }
       });
