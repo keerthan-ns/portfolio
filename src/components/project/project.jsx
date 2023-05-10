@@ -16,25 +16,26 @@ function Project() {
     const [active,setActive] = useState(1);
   return (
     <>
-        <div id="project" className='container proj-container'>
+        <div id="project" className='container proj-container w-full xl:w-1/2'>
             <h2>
                 <span>Projects</span>
             </h2>
                 <span><a href={contact.github} className='inline-flex' target='_blank' rel="noreferrer">More projects...<AiFillGithub className='self-center'/></a></span>
-            <div className='max-w-full self-center mt-4'>
+            <div className='w-full self-center mt-4'>
                 <Swiper
                 spaceBetween={50}
                 slidesPerView={1}
                 onSlideChange={(cur) => setActive(cur.realIndex)}
                 loop={true}
                 centeredSlides={true}
-                speed={800}
+                speed={500}
                 autoplay={{delay:3000,}}
                 modules={[Autoplay]}
+
                 >
                 {projects.projects.map((item,i)=>(
                     <SwiperSlide key={i}>
-                        <ProjectsCard
+                        <ProjectCard
                             name={item.title}
                             tech={item.tags}
                             src={item.img}
@@ -100,4 +101,50 @@ function ProjectsCard(props) {
             </div>
         </div>
     </div>)
+}
+
+function ProjectCard(props){
+    return(<div className="w-full h-auto  p-2 rounded-2xl border-2 border-sky-500/50 bg-gradient-to-tl from-slate-900/50 to-gray-900/50 flex flex-col ease-linear duration-300 lg:flex-row-reverse">
+            <div className=" h-full w-full animate-pulse rounded-2xl basis-2/3 relative">
+                {/* <div className=" text-white z-10 bg-[#5865F2] absolute pl-8 pr-8 pb-2 pt-2  rounded-tl-2xl rounded-br-2xl font-semibold">
+                <h1>FREE</h1>
+                </div> */}
+                <div className="h-full w-full relative  rounded-2xl">
+                <img src={props.src} alt='proimage' className='rounded-2xl fill object-cover'/>
+                </div>
+            </div>
+
+            <div className=" h-full w-full mt-2 mr-2 rounded-2xl ">
+                <a href={props.link ? props.link : props.github}>
+                    <h2 target="_blank" className="hover:text-sky-800 dark:hover:text-sky-300 cursor-pointer font-semibold text-2xl uppercase  tracking-wider md:order-2"><span className="text-base ml-1 capitalize">{props.name}</span></h2>
+                </a>
+                <p className="mt-3 mx-2 text-base  dark:text-white">
+                    {props.description}
+                </p>
+
+                <div className=" pt-8 pr-2 pl-2 flex flex-row justify-around flex-wrap">
+                    <div className='gap-3  md:tracking-wide inline-flex  justify-start  flex-wrap  text-sm md:font-semibold text-black cursor-default'>
+                        {props.tech.map((ele, i) => <button className='whitespace-nowrap bg-cyan-400 px-2 rounded-full border-2 border-sky-500/50 ' key={i}>{ele}</button>)}
+                    </div>
+                </div>
+
+                <div className="flex flex-row justify-around flex-wrap">
+                    <div className="inline-flex gap-3 pt-3 text-4xl ">
+                        {
+                            props.github &&
+                            <a href={props.github} target="_blank" rel="noreferrer">
+                                <FaGithub className="hover:text-sky-800 dark:hover:text-sky-300  " />
+                            </a>
+                        }
+                        {
+                            props.link &&
+                            <a href={props.link} target="_blank"  rel="noreferrer">
+                                <BsLink45Deg className="hover:text-sky-800 dark:hover:text-sky-300 " />
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 }

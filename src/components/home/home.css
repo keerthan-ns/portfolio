@@ -73,7 +73,42 @@
   transform: translateX(-150%) translateY(-150%);
 }
 
-.home-container img {
+.home-container .avatar{
+  position: absolute;
+  /* top: 0; */
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: breathe 1s linear infinite;
+
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.home-container .avatar .pulse-span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  background: rgb(0, 224, 244);
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes breathe {
+  50% {
+    /* box-shadow: 0 0 0 5px rgba(0, 247, 255, 0.3), 0 0 0 10px  rgba(255, 255, 255, 0.3), 0 0 0 15px rgba(0, 255, 187, 0.3); */
+    box-shadow: 0 0 0 5px rgba(0, 255, 251, 0.421), 0 0 0 10px  rgba(0, 255, 200, 0.3), 0 0 0 15px rgba(0, 255, 187, 0.3);
+  }
+ }
+
+.home-container .avatar img {
   position: absolute;
   height: 300px;
   width: 300px;
@@ -105,6 +140,7 @@
     transform:translateY(-20px);
   }
 }
+
 .scroll-down {
   transform: rotate(90deg);
   position: absolute;
@@ -182,7 +218,16 @@
     opacity: 0;
   }
 
-  .home-container img {
+  .home-container .avatar{
+    width: 250px;
+    height: 250px;
+  }
+  .home-container .avatar .pulse-span{
+    width: 250px;
+    height: 250px;
+  }
+
+  .home-container .avatar img {
     position: absolute;
     width: 250px;
     height: auto;
@@ -267,7 +312,16 @@
     opacity: 0;
   }
 
-  .home-container img {
+  .home-container .avatar{
+    width: 200px;
+    height: 200px;
+  }
+  .home-container .avatar .pulse-span{
+    width: 200px;
+    height: 200px;
+  }
+
+  .home-container .avatar img {
     position: absolute;
     height: 200px;
     width: 200px;
@@ -364,10 +418,19 @@
     opacity: 0;
   }
 
-  .home-container img {
+  .home-container .avatar{
+    width: 180px;
+    height: 180px;
+  }
+  .home-container .avatar .pulse-span{
+    width: 180px;
+    height: 180px;
+  }
+
+  .home-container .avatar img {
     position: absolute;
-    height: 185px;
-    width: 185px;
+    height: 180px;
+    width: 180px;
     border-radius: 50%;
     border: 3px solid rgb(108, 161, 197);
     transform: translate(-200px);

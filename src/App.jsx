@@ -9,7 +9,6 @@ import Techs from "./components/tech/tech"
 import Footer from "./components/footer/footer"
 import Project from './components/project/project'
 import Navbar from "./components/nav/nav"
-import { Img } from 'react-image'
 
 function App() {
   const [loading , setLoading] = useState(true)

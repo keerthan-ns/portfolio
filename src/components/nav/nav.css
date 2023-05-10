@@ -42,11 +42,11 @@
 
 @media (min-width:768px) {
   .navigation .icon:hover {
-    fill: rgba(88, 117, 248, 0.151);
-    border: 2px solid rgba(88, 117, 248, 0.192);
+    fill: rgb(255, 255, 255);
+    border: 2px solid rgba(255, 255, 255, 0.956);
   }
   
-  .navigation .icon .active-nav:hover {
+  .navigation .icon.active-nav:hover {
     fill: rgb(88, 117, 248);
     border: 2px solid rgb(88, 117, 248);
   }

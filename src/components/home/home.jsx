@@ -9,7 +9,7 @@ import LoadingSpinner from '../spinner/spinner'
 function Home() {
   useEffect(() => {
     const toggle = document.querySelector('.hover-show');
-    const tapme = document.querySelector('.tapMe');
+    const tapme = document.querySelector('.pulse-span');
     toggle.addEventListener('click', () => {
       toggle.classList.toggle('active');
       (tapme.style.visibility==='hidden')?tapme.style.visibility='visible':tapme.style.visibility='hidden';
@@ -31,10 +31,11 @@ function Home() {
           <span className='circle'><a href={contact.linkedin} target='_blank' rel='noreferrer'><AiFillLinkedin className='w-12 h-12'/></a></span>
           <span className=''></span>
         </div>
-
-        <img src={"https://res.cloudinary.com/dg7etzwks/image/upload/v1683643864/portfolioProjects/toir32dyan8dyxzlmdxb.jpg"} alt='avatar' loader={<LoadingSpinner/>}/>
+        <div className='avatar'>
+          <span className='pulse-span'></span>
+          <img src={"https://res.cloudinary.com/dg7etzwks/image/upload/v1683643864/portfolioProjects/toir32dyan8dyxzlmdxb.jpg"} alt='avatarimg' loader={<LoadingSpinner/>}/>
+        </div>
       </div>
-      <h4 className='tapMe'>Tap on avatar !!</h4>
 
       <a href='#about' className='scroll-down'>
         <hr />

@@ -10,7 +10,7 @@ export default function useMediaQuery(query) {
             mediaQuery.addEventListener("change", handler);
             return () => mediaQuery.removeEventListener("change", handler);
         },
-        []
+        [query]
     );
     return matches;
 }
