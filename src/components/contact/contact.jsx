@@ -1,10 +1,5 @@
-import "./contact.css";
-import { AiOutlineYoutube } from "react-icons/ai";
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import { AiOutlineInstagram } from "react-icons/ai";
+import "./contact.css"
 import { useForm, ValidationError } from '@formspree/react'
-import contactSvg from '../props/contact.svg'
-import { motion } from 'framer-motion'
 
 function Contact() {
   const [state, handleSubmit] = useForm("xyyaoogk");
@@ -50,4 +45,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Contact

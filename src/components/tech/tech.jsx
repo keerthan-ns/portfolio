@@ -1,4 +1,4 @@
-import "./tech.css";
+import "./tech.css"
 
 const Members = () => {
   const langs=["Java","Html5","CSS","C","Scss/Sass","Javascript","Php","Python"];
@@ -37,4 +37,4 @@ const Members = () => {
   );
 };
 
-export default Members;
+export default Members

@@ -1,5 +1,4 @@
 import './home.css'
-import img from '../props/avatar.jpg'
 import { BsMouse } from 'react-icons/bs'
 import React,{useEffect} from 'react'
 import {AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle} from 'react-icons/ai'
@@ -49,4 +48,4 @@ function Home() {
 }
 
 
-export default Home;
+export default Home

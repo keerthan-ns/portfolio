@@ -33,16 +33,6 @@
   cursor: pointer;
 }
 
-/* .home-container .logo .hover-show.active {
-  animation: showspin 8s linear 1s infinite;
-}
-
-@keyframes showspin {
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 .home-container .logo .circle {
   position: absolute;
   height: 100px;
@@ -55,7 +45,6 @@
   transition: 0.2s ease;
   opacity: 0;
   visibility: hidden;
-  /* z-index: -5; */
 }
 
 .home-container .logo .hover-show.active .circle {
@@ -64,60 +53,24 @@
 }
 
 .home-container .logo .hover-show.active .circle:nth-child(1) {
-  /* background: url(../props/html.png); */
-  /* background-size: cover;
-  background-position: center; */
   position: absolute;
   transform: translateY(-210%);
 }
 .home-container .logo .hover-show.active .circle:nth-child(2) {
   position: absolute;
   transform: translateX(150%) translateY(-150%);
-  /* background: url(../props/css.png);
-  background-size: cover;
-  background-position: center; */
 }
 .home-container .logo .hover-show.active .circle:nth-child(3) {
   position: absolute;
   transform: translateX(210%);
-  /* background: url(../props/js.jpg);
-  background-size: cover;
-  background-position: center; */
 }
-/* .home-container .logo .hover-show.active .circle:nth-child(4) {
-  position: absolute;
-  transform: translateX(150%) translateY(150%);
-  background: url(../props/bootstrap.png);
-  background-size: cover;
-  background-position: center;
-}
-.home-container .logo .hover-show.active .circle:nth-child(5) {
-  position: absolute;
-  transform: translateY(210%);
-  background: url(../props/react.png);
-  background-size: cover;
-  background-position: center;
-}
-.home-container .logo .hover-show.active .circle:nth-child(6) {
-  position: absolute;
-  transform: translateX(-150%) translateY(150%);
-  background: url(../props/kotlin.png);
-  background-size: cover;
-  background-position: center;
-} */
 .home-container .logo .hover-show.active .circle:nth-child(7) {
   position: absolute;
   transform: translateX(-210%);
-  /* background: url(../props/c-plus-plus.png);
-  background-size: cover;
-  background-position: center; */
 }
 .home-container .logo .hover-show.active .circle:nth-child(8) {
   position: absolute;
   transform: translateX(-150%) translateY(-150%);
-  /* background: url(../props/c-sharp.png);
-  background-size: cover;
-  background-position: center; */
 }
 
 .home-container img {
@@ -139,9 +92,9 @@
 }
 
 .tapMe{
-  /* margin-top: 20px; */
   animation: bounce .4s ease infinite alternate;
 }
+
 @keyframes bounce {
   0% {
       text-shadow:
@@ -152,33 +105,6 @@
     transform:translateY(-20px);
   }
 }
-
-/* .home-container h2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 60%;
-  margin-top: 50px;
-}
-
-.home-container h2 span {
-  font-size: 25px;
-  opacity: 0.8;
-  padding-bottom: 5px;
-  border-bottom: 2px solid var(--color-pri);
-  font-family: "Open Sans Condensed", sans-serif;
-}
-
-.home-container h2 p {
-  font-size: 20px;
-  opacity: 1;
-  font-weight: 100;
-  margin-top: 1px;
-  font-family: "Open Sans", sans-serif;
-} */
-
 .scroll-down {
   transform: rotate(90deg);
   position: absolute;
@@ -258,7 +184,6 @@
 
   .home-container img {
     position: absolute;
-    /* height: 250px; */
     width: 250px;
     height: auto;
     border-radius: 50%;

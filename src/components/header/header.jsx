@@ -1,4 +1,4 @@
-import './header.css';
+import './header.css'
 import { Typewriter } from "react-simple-typewriter"
 
 function Header() {
@@ -8,8 +8,6 @@ function Header() {
       <h3>
         <p>
           Hello there<span>!  </span>
-        {/* </p>
-        <p> */}
           I<span>'</span>m
         </p>
         Keerthan NS
@@ -18,4 +16,4 @@ function Header() {
     </div>
   );
 }
-export default Header;
+export default Header

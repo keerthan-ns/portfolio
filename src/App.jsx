@@ -1,15 +1,15 @@
-import './App.css';
+import './App.css'
 import { useEffect, useState } from "react"
-import Loader from './Loaders/Loader';
-import Header from "./components/header/header";
-import Home from "./components/home/home";
-import About from "./components/about/about";
-import Contact from "./components/contact/contact";
-import Techs from "./components/tech/tech";
-import Footer from "./components/footer/footer";
-import Project from './components/project/project';
-import Navbar from "./components/nav/nav";
-import { Img } from 'react-image';
+import Loader from './Loaders/Loader'
+import Header from "./components/header/header"
+import Home from "./components/home/home"
+import About from "./components/about/about"
+import Contact from "./components/contact/contact"
+import Techs from "./components/tech/tech"
+import Footer from "./components/footer/footer"
+import Project from './components/project/project'
+import Navbar from "./components/nav/nav"
+import { Img } from 'react-image'
 
 function App() {
   const [loading , setLoading] = useState(true)
@@ -33,7 +33,6 @@ function App() {
         <div className="bg-circle1"></div>
         <div className="bg-circle2"></div>
         <section id='homeSect'>
-          {/* <div id="home" className='h-screen bg-[url("https://res.cloudinary.com/dg7etzwks/image/upload/v1683643876/portfolioProjects/k0e6d6uhxc3aety2saca.jpg")] bg-cover bg-center'> */}
           <div id="home" className='h-screen '>
             <Img src={'https://res.cloudinary.com/dg7etzwks/image/upload/v1683643876/portfolioProjects/k0e6d6uhxc3aety2saca.jpg'} className='h-screen absolute w-full self-center object-cover'/>        
             <Header/>
@@ -58,4 +57,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

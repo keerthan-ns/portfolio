@@ -1,17 +1,14 @@
-import "./footer.css";
-import { BsMouse } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
-import { TiSocialTwitter } from "react-icons/ti";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { MdMail } from "react-icons/md";
-import { contact } from "../../data/data";
+import "./footer.css"
+import { BsMouse } from "react-icons/bs"
+import { BsInstagram } from "react-icons/bs"
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
+import { MdMail } from "react-icons/md"
+import { contact } from "../../data/data"
 
 function Footer() {
   return (
     <div id="footer" className="container footer-container">
       <h1>
-        {/* That's all{" "} */}
         <a href="#home">
           <h2>
             <BsMouse /> - scroll up -
@@ -38,4 +35,4 @@ function Footer() {
     </div>
   );
 }
-export default Footer;
+export default Footer

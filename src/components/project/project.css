@@ -1,9 +1,7 @@
 .proj-container {
     position: relative;
     min-height: 100vh;
-    /* padding: 50px 40px; */
     padding: 0px 40px 50px 40px;
-    /* margin-top: 7px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +15,6 @@
     justify-content: center;
     align-items: center;
     max-width: 95%;
-    /* margin-top: 50px; */
   }
 
   .proj-container span a{
