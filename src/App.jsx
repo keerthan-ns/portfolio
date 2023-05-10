@@ -34,7 +34,7 @@ function App() {
         <div className="bg-circle2"></div>
         <section id='homeSect'>
           <div id="home" className='h-screen '>
-            <Img src={'https://res.cloudinary.com/dg7etzwks/image/upload/v1683643876/portfolioProjects/k0e6d6uhxc3aety2saca.jpg'} className='h-screen absolute w-full self-center object-cover'/>        
+            <img src={'https://res.cloudinary.com/dg7etzwks/image/upload/v1683643876/portfolioProjects/k0e6d6uhxc3aety2saca.jpg'} className='h-screen absolute w-full self-center object-cover' alt='background'/>        
             <Header/>
             <Home />
           </div>
