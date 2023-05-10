@@ -11,17 +11,17 @@ export const projects = {
       {
         title: 'Abhijinya Education',
         description: 'A static website built while an web development intern in Inspirante Technologies Pvt.Ltd. Abhijinya Education Services offers Aptitude training, Soft skills, Workshops, Seminars, Job preparation techniques & Personality development programs.',
-        link: 'https://https://abhijnyaeducation.com/',
+        link: 'https://abhijnyaeducation.com/',
         img: "https://res.cloudinary.com/dg7etzwks/image/upload/v1683653130/portfolioProjects/yhtquvm0jqlhgdiwakwq.png",
         tags: ['html', 'css/scss',' Bootstrap']
       },
       {
         title: 'VChat',
         description: 'The Vchat(Instagram clone) is a user-friendly web-application. The website has a modern, responsive design, and uses a combination of technologies such as ReactJs and MongoDB to provide a smooth and seamless user experience.',
-        github: '',
-        link: '',
+        github: 'https://github.com/keerthan2002/Vchat',
+        link: 'https://vchat-now.vercel.app/',
         img: "https://res.cloudinary.com/dg7etzwks/image/upload/v1683649067/portfolioProjects/y7qvarbtpqxtaruwlh85.png",
-        tags: ['ReactJS','css/scss','MongoDB','Material UI']
+        tags: ['ReactJS','css/scss','Django','MongoDB']
       },
     ]
   };
