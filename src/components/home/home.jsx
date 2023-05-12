@@ -33,7 +33,8 @@ function Home() {
         </div>
         <div className='avatar'>
           <span className='pulse-span'></span>
-          <img src={"https://res.cloudinary.com/dg7etzwks/image/upload/v1683643864/portfolioProjects/toir32dyan8dyxzlmdxb.jpg"} alt='avatarimg' loader={<LoadingSpinner/>}/>
+          {/* <img src={"https://res.cloudinary.com/dg7etzwks/image/upload/v1683643864/portfolioProjects/toir32dyan8dyxzlmdxb.jpg"} alt='avatarimg' loader={<LoadingSpinner/>}/> */}
+          <img src={"https://res.cloudinary.com/dg7etzwks/image/upload/v1683852443/portfolioProjects/xhy9v39vuzy3qzbfgjdf.jpg"} alt='avatarimg' loader={<LoadingSpinner/>}/>
         </div>
       </div>
 
