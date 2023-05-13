@@ -37,6 +37,7 @@ function Home() {
           <img src={"https://res.cloudinary.com/dg7etzwks/image/upload/v1683852443/portfolioProjects/xhy9v39vuzy3qzbfgjdf.jpg"} alt='avatarimg' loader={<LoadingSpinner/>}/>
         </div>
       </div>
+      <a href={contact.resume} target='_blank' rel="noreferrer" className='mt-6 md:mt-8 lg:mt-4 py-1 px-2 bg-gradient-to-t from-purple-700 to-pink-500 rounded-md text-lg font-semibold active:bg-violet-900 active:scale-[0.95] transition-all duration-100'>Download Resume</a>
 
       <a href='#about' className='scroll-down'>
         <hr />

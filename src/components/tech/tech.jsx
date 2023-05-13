@@ -3,7 +3,7 @@ import "./tech.css"
 const Members = () => {
   const langs=["Java","Html5","CSS","C","Scss/Sass","Javascript","Php","Python"];
   const frameworks=["TailwindCSS","Bootstrap","React","Laravel","Django"];
-  const tools=["GIMP","Github","Inkscape","Scenebuilder","QT designer","Blender","MySQL"];
+  const tools=["AppWrite","GIMP","Github","Inkscape","Scenebuilder","QT designer","Blender","MySQL"];
   return (
     <div id="tech" className="container tech-container">
       <h2>
