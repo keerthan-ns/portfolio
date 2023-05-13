@@ -75,12 +75,14 @@
 
 .home-container .avatar{
   position: absolute;
-  /* top: 0; */
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  animation: breathe 1s linear infinite;
 
+}
+
+.breathe-effect{
+  animation: breathe 1s linear infinite;
 }
 
 @keyframes ping {
@@ -98,6 +100,9 @@
   width: 300px;
   height: 300px;
   background: rgb(0, 224, 244);
+}
+
+.ping-effect{
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 

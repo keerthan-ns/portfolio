@@ -10,10 +10,14 @@ function Home() {
   useEffect(() => {
     const toggle = document.querySelector('.hover-show');
     const tapme = document.querySelector('.pulse-span');
+    const avatar = document.querySelector('.avatar');
+    const pulse = document.querySelector('.pulse-span');
     toggle.addEventListener('click', () => {
       toggle.classList.toggle('active');
       (tapme.style.visibility==='hidden')?tapme.style.visibility='visible':tapme.style.visibility='hidden';
     });
+    avatar.classList.add('breathe-effect');
+    pulse.classList.add('ping-effect');
   },);
   
 
