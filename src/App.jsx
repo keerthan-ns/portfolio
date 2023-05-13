@@ -9,6 +9,7 @@ import Techs from "./components/tech/tech"
 import Footer from "./components/footer/footer"
 import Project from './components/project/project'
 import Navbar from "./components/nav/nav"
+import { Analytics } from '@vercel/analytics/react'
 
 function App() {
   const [loading , setLoading] = useState(true)
@@ -29,6 +30,7 @@ function App() {
 
   return (
       <>
+        <Analytics/>
         <div className="bg-circle1"></div>
         <div className="bg-circle2"></div>
         <section id='homeSect'>
