@@ -11,7 +11,7 @@ const education=[
     name:'NRAM Polytechnic, Nitte',
     designation:'Diploma in Computer Science'
   },{
-    timeline:'2007-2018',
+    timeline:'2006-2018',
     name:'Dr.NSAM English Medium High School, Nitte',
     designation:'Secondary Education'
   }
