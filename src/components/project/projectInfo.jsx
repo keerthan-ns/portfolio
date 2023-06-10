@@ -4,7 +4,7 @@ export const projects = {
         title: 'Incridea-2023',
         description: 'Website for the annual techno-cultural fest of NMAMIT, called Incridea. Worked in team of 9. The website was visited by over 5000+ people throughout the duration of the fest.',
         github: 'https://github.com/incridea-23/incridea-client',
-        link: 'https://incridea.in',
+        link: 'http://incridea.vercel.app',
         img: "https://res.cloudinary.com/dg7etzwks/image/upload/v1683852443/portfolioProjects/uqau9y2uttv5ma9wjqa1.png",
         tags: ['Nextjs','TypeScript', 'TailwindCSS', 'GraphQl','Prisma']
       },
