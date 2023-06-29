@@ -4,5 +4,5 @@ export const contact = {
     instagram: 'https://instagram.com/keerthan_ns',
     mail: 'mailto:keerthanns091@gmail.com',
     twitter:'https://twitter.com/keerthan_ns',
-    resume: 'https://drive.google.com/file/d/1cT35JhWGvSJ6gCOZ0GhChJEBpx8cYdfQ/view?usp=sharing'
+    resume: 'https://drive.google.com/file/d/1hQe1MGIjXVx9CDUpBvn26NdxxKv3FlpD/view?usp=sharing'
   };
