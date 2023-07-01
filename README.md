@@ -10,10 +10,10 @@ This is a personal portfolio website built using React.js and Tailwind CSS. The 
 Vercel is a cloud platform that provides an easy and efficient way to deploy, host, and scale web applications and static websites.
 
 ## Setup and Installation
-- Clone the repository: git clone https://github.com/keerthan2002/portfolio.git
-- Navigate to the project directory: cd portfolio
-- Install the dependencies: npm install
-- Run the development server: npm start
-- Open your browser and visit: http://localhost:3000
+- Clone the repository: `git clone https://github.com/keerthan2002/portfolio.git`
+- Navigate to the project directory: `cd portfolio`
+- Install the dependencies: `npm install`
+- Run the development server: `npm start`
+- Open your browser and visit: `http://localhost:3000`
 
 
