@@ -20,7 +20,7 @@ export const projects = {
         description: 'This is my portfolio website. It is a static website built using ReactJS and TailwindCSS. I really enjoyed building this website.',
         github: 'https://github.com/keerthan2002/portfolio',
         link: 'https://keerthanns.vercel.app/',
-        img: "https://res.cloudinary.com/dg7etzwks/image/upload/v1683852442/portfolioProjects/hvkhtstbi2k6impy4mtu.png",
+        img: "https://res.cloudinary.com/dg7etzwks/image/upload/v1688752957/portfolioProjects/portPro_b6lsrl.png",
         tags: ['ReactJS','css','TailwindCSS']
       },
       {
