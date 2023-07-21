@@ -1,8 +1,8 @@
 import "./tech.css"
 
 const Members = () => {
-  const langs=["Java","Html5","CSS","C","Scss/Sass","Javascript","Php","Python"];
-  const frameworks=["TailwindCSS","Bootstrap","React","Laravel"];
+  const langs=["Java","Html5","CSS3","C","Scss/Sass","Javascript","Php","Python","SQL"];
+  const frameworks=["TailwindCSS","ReactJS","ExpressJS","NodeJS","Django","Laravel","Bootstrap"];
   const tools=["AppWrite","GIMP","Github","Inkscape","Scenebuilder","QT designer","Blender","MySQL"];
   return (
     <div id="tech" className="container tech-container">
