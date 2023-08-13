@@ -1,5 +1,5 @@
 # Personal Portfolio Website
-<img src="https://res.cloudinary.com/dg7etzwks/image/upload/v1688752957/portfolioProjects/portPro_b6lsrl.png" alt="Portfolio Output" style="height: 350px; width: auto;" />
+<img src="https://res.cloudinary.com/dg7etzwks/image/upload/v1688752957/portfolioProjects/portPro_b6lsrl.png" alt="Portfolio Output" style="height: auto; width: 670px;" />
 
 This is a personal portfolio website built using React.js and Tailwind CSS. The website serves as a showcase for my skills, projects, and experience. It provides visitors with an overview of my background and showcases my work.
 
