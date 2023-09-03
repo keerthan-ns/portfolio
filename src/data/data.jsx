@@ -4,6 +4,6 @@ export const contact = {
     instagram: 'https://instagram.com/keerthan_ns',
     mail: 'mailto:keerthanns091@gmail.com',
     twitter:'https://twitter.com/keerthan_ns',
-    resume: 'https://drive.google.com/file/d/1qmtZAYmzcZWpEPeMlOlTVcDHGT8Hjnoh/view?usp=sharing',
+    resume: 'https://drive.google.com/file/d/1xyH2P8MNG2sjOgz2uygFc8KPBpr8QUhe/view?usp=sharing',
     resumeold: 'https://drive.google.com/file/d/1hQe1MGIjXVx9CDUpBvn26NdxxKv3FlpD/view?usp=sharing'
   };
