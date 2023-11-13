@@ -18,7 +18,7 @@ export const projects = {
       {
         title: 'My Portfolio (This website)',
         description: 'This is my portfolio website. It is a static website built using ReactJS and TailwindCSS. I really enjoyed building this website.',
-        github: 'https://github.com/keerthan2002/portfolio',
+        github: 'https://github.com/keerthan-ns/portfolio',
         link: 'https://keerthanns.vercel.app/',
         img: "https://res.cloudinary.com/dg7etzwks/image/upload/v1688752957/portfolioProjects/portPro_b6lsrl.png",
         tags: ['ReactJS','css','TailwindCSS']
@@ -26,7 +26,7 @@ export const projects = {
       {
         title: 'VChat',
         description: 'The Vchat(Instagram clone) is a user-friendly web-application. The website has a modern, responsive design, and uses a combination of technologies such as ReactJs and MongoDB to provide a smooth and seamless user experience.',
-        github: 'https://github.com/keerthan2002/Vchat',
+        github: 'https://github.com/keerthan-ns/Vchat',
         link: 'https://vchat-now.vercel.app/',
         img: "https://res.cloudinary.com/dg7etzwks/image/upload/v1683852442/portfolioProjects/wxp6qwy2qw9beyygziog.png",
         tags: ['ReactJS','css/scss','Django','MongoDB']
