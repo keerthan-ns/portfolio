@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 
 const education=[
   {
-    timeline:'2021-Present',
+    timeline:'2021-2024',
     name:'NMAM Institute of Technology, Nitte',
     designation:'BE in Computer Science'
   },{
@@ -18,9 +18,13 @@ const education=[
 ]
 const experience=[
   {
-    timeline:'Aug 2022-Present',
+    timeline:'Feb 2024- Present',
+    name:'Edgeverve',
+    designation:'Product Engineer Intern'
+  },{
+    timeline:'Aug 2022-Feb 2024',
     name:'Inspirante Technology Pvt. Ltd, Udupi',
-    designation:'Software Developer Intern'
+    designation:'Full-stack Web Dev Intern'
   },{
     timeline:'Aug 2021-Sept 2021',
     name:'Vitvara Technology, Mangalore',
@@ -34,11 +38,15 @@ function About() {
       <div id="about" className='container abt-container'>
         <h2>
           <span>About Me</span> <br />
-          <p className=' indent-10 text-justify'>
-            I am currently pursuing BE in Computer Science and  I have a strong interest in web development.
+            {/* I am currently pursuing BE in Computer Science and  I have a strong interest in web development.
             I am also working on becoming a full-stack web developer. I find the process of creating web applications and software apps very satisfying and I enjoy the challenges that comes with it.
             In my free time, you can find me watching movies or gaming. It is a great way to unwind and relax after a long day. I enjoy playing games from various
-            genres, including Open-world like GTA5, strategy, racing games.
+            genres, including Open-world like GTA5, strategy, racing games. */}
+          <p className=' indent-10 text-justify'>
+            Hi there! I'm Keerthan NS. A Full-Stack Web developer, having a strong interest in web development. I build responsive and scalable
+            web applications using latest tools and frameworks. I find the process of creating web applications and software apps very satisfying
+            and I enjoy the challenges that comes with it. In my free time, you can find me watching movies or gaming. It is a great way to unwind
+            and relax after a long day. I enjoy playing games from various genres, including Open-world like GTA5, strategy, racing games.
           </p>
         </h2>
         <div className="flex flex-col md:flex-row md:gap-6">

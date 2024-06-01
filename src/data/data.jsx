@@ -1,6 +1,6 @@
 export const contact = {
     github: 'https://github.com/keerthan-ns',
-    linkedin: 'https://www.linkedin.com/in/keerthan-n-s-220142208/',
+    linkedin: 'https://www.linkedin.com/in/keerthan-ns/',
     instagram: 'https://instagram.com/keerthan_ns',
     mail: 'mailto:keerthanns091@gmail.com',
     twitter:'https://twitter.com/keerthan_ns',

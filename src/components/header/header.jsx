@@ -2,7 +2,7 @@ import './header.css'
 import { Typewriter } from "react-simple-typewriter"
 
 function Header() {
-  const status= ['Web Developer','Student']
+  const status= ['Full-Stack Web Developer','Product Engineer']
   return (
     <div id='home' className='containerH header-container'>
       <h3>
