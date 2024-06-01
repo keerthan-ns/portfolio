@@ -4,9 +4,29 @@ export const projects = {
         title: 'Incridea-2023',
         description: 'Website for the annual techno-cultural fest of NMAMIT, called Incridea. Worked in team of 9. The website was visited by over 5000+ people throughout the duration of the fest.',
         github: 'https://github.com/incridea-23/incridea-client',
-        link: 'http://incridea.vercel.app',
         img: "https://res.cloudinary.com/dg7etzwks/image/upload/v1683852443/portfolioProjects/uqau9y2uttv5ma9wjqa1.png",
         tags: ['Nextjs','TypeScript', 'TailwindCSS', 'GraphQl','Prisma']
+      },{
+        title: 'Incridea-2024',
+        description: 'Website for the annual techno-cultural fest of NMAMIT, called Incridea. Worked in team of 24. The website was visited by over 5000+ people throughout the duration of the fest.',
+        github: 'https://github.com/incridea-23/incridea-client',
+        link: 'http://incridea.in',
+        img: "https://res.cloudinary.com/dg7etzwks/image/upload/v1717234994/portfolioProjects/nuasdlmme1hwy6n8evki.png",
+        tags: ['Nextjs','TypeScript', 'TailwindCSS', 'GraphQl','Prisma']
+      },
+      {
+        title: 'Anugraha coaching',
+        description: 'Anugraha Online Coaching Center is built with the T3 stack. It supports English and Kannada languages. Students can submit details and payment proof, which the admin can verify and manage. Automatic mail confirmation feature.',
+        link: 'https://anugrahaedu.in/kn',
+        img: "https://res.cloudinary.com/dg7etzwks/image/upload/v1705248952/portfolioProjects/anugraha_o1932k.png",
+        tags: ['NextJS','Typescript','Tailwindcss','Prisma','tRPC','NextAuth','Supabase']
+      },
+      {
+        title: 'Inspirante Technologies',
+        description: 'Inspirante Technologies Pvt Ltd provides Software-as-a-Service [SAAS] ERP solutions. I have revamped the website by adding recaptcha, auto-mail system features and validations.',
+        link: 'https://inspirantech.in/',
+        img: "https://res.cloudinary.com/dg7etzwks/image/upload/v1705248981/portfolioProjects/inspirantech_opvkzj.png",
+        tags: ['Html','css','Bootstrap','Javascript','Php']
       },
       {
         title: 'Abhijinya Education',
@@ -30,6 +50,6 @@ export const projects = {
         link: 'https://vchat-now.vercel.app/',
         img: "https://res.cloudinary.com/dg7etzwks/image/upload/v1683852442/portfolioProjects/wxp6qwy2qw9beyygziog.png",
         tags: ['ReactJS','css/scss','Django','MongoDB']
-      },
+      }
     ]
   };
