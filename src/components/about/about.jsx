@@ -18,8 +18,12 @@ const education=[
 ]
 const experience=[
   {
-    timeline:'Feb 2024- Present',
-    name:'Edgeverve',
+    timeline:'Aug 2024- Present',
+    name:'Edgeverve Systems (Infosys finacle)',
+    designation:'Product Engineer'
+  },{
+    timeline:'Feb 2024- Jul 2024',
+    name:'Edgeverve Systems Pvt. Ltd',
     designation:'Product Engineer Intern'
   },{
     timeline:'Aug 2022-Feb 2024',
