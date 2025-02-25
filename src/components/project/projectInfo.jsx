@@ -17,7 +17,7 @@ export const projects = {
       {
         title: 'Anugraha coaching',
         description: 'Anugraha Online Coaching Center is built with the T3 stack. It supports English and Kannada languages. Students can submit details and payment proof, which the admin can verify and manage. Automatic mail confirmation feature.',
-        link: 'https://anugrahaedu.in/kn',
+        link: 'https://anugraha.vercel.app',
         img: "https://res.cloudinary.com/dg7etzwks/image/upload/v1705248952/portfolioProjects/anugraha_o1932k.png",
         tags: ['NextJS','Typescript','Tailwindcss','Prisma','tRPC','NextAuth','Supabase']
       },
