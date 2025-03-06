@@ -36,11 +36,14 @@ const scene = new THREE.Scene();
 let bee;
 let mixer;
 const loader = new GLTFLoader();
-loader.load('/demon_bee_full_texture.glb',
-// loader.load('/fly_bee.glb',
+// loader.load('/demon_bee_full_texture.glb',
+loader.load('/fly_bee.glb',
     function (gltf) {
         bee = gltf.scene;
         scene.add(bee);
+
+        // resize model
+        bee.scale.set(0.03, 0.03, 0.03); 
 
         mixer = new THREE.AnimationMixer(bee);
         mixer.clipAction(gltf.animations[0]).play();
