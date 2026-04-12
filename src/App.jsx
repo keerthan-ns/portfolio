@@ -20,7 +20,7 @@ function App() {
   //   setTimeout(() => {
   //     setLoading(false);
   //   }, 5000);
-    
+
   // }, [])
 
   // if(loading){
@@ -31,15 +31,19 @@ function App() {
 
   return (
     <Fragment>
-      <Loader/>
+      <Loader />
       <Analytics />
       <SpeedInsights />
       <div className="bg-circle1"></div>
       <div className="bg-circle2"></div>
       <section className='section' id='homeSect'>
         <div id="home" className='h-screen '>
-          <img src={'https://res.cloudinary.com/dg7etzwks/image/upload/v1683852442/portfolioProjects/cegavi7l1m0grdabdbhn.jpg'} className='h-screen absolute w-full self-center object-cover' alt='background'/>        
-          <Header/>
+          <img
+            src="https://res.cloudinary.com/dg7etzwks/image/upload/v1683852442/portfolioProjects/cegavi7l1m0grdabdbhn.jpg"
+            className="absolute inset-0 w-full h-full object-cover"
+            alt="background"
+          />
+          <Header />
           <Home />
         </div>
       </section>
@@ -50,13 +54,13 @@ function App() {
         <Techs />
       </section>
       <section className='section' id='projectSect'>
-        <Project/>
+        <Project />
       </section>
       <section className='section' id='contactSect'>
         <Contact />
       </section>
-        <Footer />
-      <Navbar/>
+      <Footer />
+      <Navbar />
     </Fragment>
   );
 }
