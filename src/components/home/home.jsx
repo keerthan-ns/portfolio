@@ -21,7 +21,7 @@ function Home() {
     pulse.classList.add('ping-effect');
     setToggleEle(toggle);
     setTapmeEle(tapme);
-  },);
+  }, []);
   
 
   return (

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React,{useState} from 'react'
 import "./project.css"
 import {AiFillGithub} from 'react-icons/ai'
@@ -13,7 +14,7 @@ import { contact } from '../../data/data'
 import LoadingSpinner from '../spinner/spinner'
 
 function Project() {
-    const [active,setActive] = useState(1);
+    const [active, setActive] = useState(1);
   return (
     <>
         <div id="project" className='container proj-container w-full xl:w-1/2'>
